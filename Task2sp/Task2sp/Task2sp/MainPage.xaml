@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Task2sp"
+             x:Class="Task2sp.MainPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" Margin="50">
+                <Label Text="Name"  FontSize="Medium">
+                </Label>
+                <Entry Placeholder="enter your name"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="50">
+                <Label Text="emailid" FontSize="Medium">
+
+                </Label>
+                <Entry Placeholder="email"></Entry>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
