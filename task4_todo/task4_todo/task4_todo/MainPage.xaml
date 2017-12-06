@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:task4_todo"
+             x:Class="task4_todo.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+        Orientation="Vertical"
+        Margin="7">
+
+                <Label
+            Text="My To Do List"
+               
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+                    Margin="10"
+            />
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 1: " FontSize="20"></Label>
+                    <Entry x:Name="item1" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 2: " FontSize="20"></Label>
+                    <Entry x:Name="item2" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 3 : " FontSize="20"></Label>
+                    <Entry x:Name="item3" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 4 : " FontSize="20"></Label>
+                    <Entry x:Name="item4" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+             
+
+                
+
+
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    
+                    <Button BackgroundColor="ForestGreen" HorizontalOptions="Center" TextColor="White" Text="View" Clicked="View"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
