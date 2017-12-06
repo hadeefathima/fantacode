@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Task3_2p"
+             x:Class="Task3_2p.MainPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Personal Details" FontSize="30" HorizontalOptions="Center"></Label>    
+            <StackLayout
+      Orientation="Horizontal"
+            WidthRequest="300">
+                <Label Text=" Name"
+                  FontSize="20"
+                   WidthRequest="100">
+                </Label>
+                <Entry x:Name="n" Placeholder="Enter your name" WidthRequest="200"/>
+            </StackLayout>
+            <StackLayout
+      Orientation="Horizontal" >
+                <Label Text=" Email"
+                  FontSize="20"
+                   WidthRequest="100">
+                </Label>
+                <Entry x:Name="em" Placeholder="Enter email address" WidthRequest="200"/>
+            </StackLayout>
+            <StackLayout
+      Orientation="Horizontal" >
+                <Label Text="Profession"
+                  FontSize="20"
+                       WidthRequest="100">
+                </Label>
+                <Entry x:Name="p" Placeholder="Enter profession" WidthRequest="200"/>
+
+            </StackLayout>
+
+            <Button Text="SUBMIT" BackgroundColor="Black" TextColor="White" HorizontalOptions="Center" Clicked="submit"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

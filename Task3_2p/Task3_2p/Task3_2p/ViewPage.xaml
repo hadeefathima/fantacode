@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Task3_2p.ViewPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="50">
+            <Label Text="Details" HorizontalOptions="Center" Margin="10"></Label>
+            <Label x:Name="nm" Margin="5"></Label>
+            <Label x:Name="el" Margin="5"></Label>
+            <Label x:Name="pf" Margin="5"></Label>
+               
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
