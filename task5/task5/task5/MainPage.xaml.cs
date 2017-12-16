@@ -12,7 +12,7 @@ namespace task5
 		public MainPage()
 		{
 			InitializeComponent();
-            BindingContext = new ViewModels.HomeViewModel();
+            BindingContext = new ViewModels.HomeViewModel(Navigation);
 
         }
 	}

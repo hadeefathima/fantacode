@@ -18,8 +18,28 @@ namespace task5.ViewModels
         public INavigation Navigation { get; set; }
 
         public ICommand viewlist { set; get; }
-     public ObservableCollection<TaskModel> _list;
+     private ObservableCollection<TaskModel> _list;
+        public ObservableCollection<TaskModel> List
 
+        {
+
+            get
+
+            {
+
+                return _list;
+
+            }
+
+            set
+
+            {
+
+                _list = value;
+
+            }
+
+        }
         public Models.TaskModel TaskModel {
             get { return _taskmodel; }
             set
@@ -48,7 +68,7 @@ namespace task5.ViewModels
 
             };
 
-            _list = new ObservableCollection<TaskModel>()
+            List = new ObservableCollection<TaskModel>()
 
             {
 
@@ -60,7 +80,7 @@ namespace task5.ViewModels
 
             this.viewlist = new Command(async () =>
             {
-                _list.Add(TaskModel);
+                List.Add(TaskModel);
                 await GotoPage2();
                 });
         
@@ -72,7 +92,7 @@ namespace task5.ViewModels
 
             
 
-            await Navigation.PushAsync(new listpage(_list));
+            await Navigation.PushAsync(new listpage(List));
 
         }
 

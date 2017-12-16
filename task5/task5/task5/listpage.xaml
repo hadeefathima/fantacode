@@ -4,9 +4,66 @@
              x:Class="task5.listpage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView HasUnevenRows="True" ItemsSource="{Binding List}">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <StackLayout Orientation="Vertical" Padding="30">
+
+                                <Grid BackgroundColor="BlanchedAlmond" HeightRequest="190">
+
+                                    <StackLayout Orientation="Vertical" Padding="20" BackgroundColor="Firebrick">
+
+                                        <StackLayout Orientation="Horizontal">
+
+                                            <Label Text="week" WidthRequest="60" TextColor="Black"></Label>
+
+                                            <Label Text="{Binding Task1}"/>
+
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+
+                                            <Label Text="      " WidthRequest="60" TextColor="Black"></Label>
+
+                                            <Label Text="{Binding Task2}"/>
+
+                                        </StackLayout>
+
+                                        
+
+                                        <StackLayout Orientation="Horizontal">
+
+                                            <Label Text="     " WidthRequest="60" TextColor="Black"></Label>
+
+                                            <Label Text="{Binding Task3}"/>
+
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+
+                                            <Label Text="      " WidthRequest="60" TextColor="Black"></Label>
+
+                                            <Label Text="{Binding Task4}"/>
+
+                                        </StackLayout>
+
+
+
+                                    </StackLayout>
+
+                                </Grid>
+
+                            </StackLayout>
+
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

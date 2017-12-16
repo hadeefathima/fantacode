@@ -19,25 +19,25 @@
             />
                 <StackLayout
             Orientation="Horizontal">
-                    <Label Text="week 1: " FontSize="20"></Label>
-                    <Entry  Placeholder="Enter the task" WidthRequest="150"></Entry>
+                    <Label Text="WEEK : " FontSize="20"></Label>
+                    <Entry Text="{Binding TaskModel.Task1,Mode=TwoWay}" Placeholder="Enter the week no" WidthRequest="150"></Entry>
 
                 </StackLayout>
                 <StackLayout
             Orientation="Horizontal">
-                    <Label Text="Task 2: " FontSize="20"></Label>
-                    <Entry  Placeholder="Enter the task" WidthRequest="150"></Entry>
+                    <Label Text="Task 1: " FontSize="20"></Label>
+                    <Entry Text="{Binding TaskModel.Task2,Mode=TwoWay}"  Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 2 : " FontSize="20"></Label>
+                    <Entry Text="{Binding TaskModel.Task3,Mode=TwoWay}" Placeholder="Enter the task" WidthRequest="150"></Entry>
 
                 </StackLayout>
                 <StackLayout
             Orientation="Horizontal">
                     <Label Text="Task 3 : " FontSize="20"></Label>
-                    <Entry  Placeholder="Enter the task" WidthRequest="150"></Entry>
-
-                </StackLayout>
-                <StackLayout
-            Orientation="Horizontal">
-                    <Label Text="Task 4 : " FontSize="20"></Label>
                     <Entry Text="{Binding TaskModel.Task4,Mode=TwoWay}" Placeholder="Enter the task" WidthRequest="150"></Entry>
 
                 </StackLayout>

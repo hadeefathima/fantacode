@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using task5.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,7 @@ namespace task5
 		public listpage (System.Collections.ObjectModel.ObservableCollection<Models.TaskModel> _list)
 		{
 			InitializeComponent ();
+            BindingContext = new listviewmodel(_list);
 		}
 	}
 }

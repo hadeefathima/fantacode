@@ -13,7 +13,7 @@ namespace task5
 		{
 			InitializeComponent();
 
-			MainPage = new task5.MainPage();
+			MainPage = new NavigationPage(new task5.MainPage());
 		}
 
 		protected override void OnStart ()
