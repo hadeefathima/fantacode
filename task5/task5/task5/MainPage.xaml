@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:task5"
+             x:Class="task5.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout
+        Orientation="Vertical"
+        Margin="7">
+
+                <Label
+            Text="My To Do List for this week"
+               
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+                    Margin="10"
+            />
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="week 1: " FontSize="20"></Label>
+                    <Entry  Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 2: " FontSize="20"></Label>
+                    <Entry  Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 3 : " FontSize="20"></Label>
+                    <Entry  Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+                <StackLayout
+            Orientation="Horizontal">
+                    <Label Text="Task 4 : " FontSize="20"></Label>
+                    <Entry Text="{Binding TaskModel.Task4,Mode=TwoWay}" Placeholder="Enter the task" WidthRequest="150"></Entry>
+
+                </StackLayout>
+
+
+
+
+
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+                    <Button BackgroundColor="ForestGreen" HorizontalOptions="Center" TextColor="White" Text="View" Command="{Binding viewlist}"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
+
+
