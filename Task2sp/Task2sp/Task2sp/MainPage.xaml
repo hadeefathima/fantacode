@@ -16,7 +16,7 @@
                 </Label>
                </StackLayout>
             <StackLayout Orientation="Horizontal" >
-                <Label Text="Drinks:   " FontSize="Medium">
+                <Label Text="Drinks:    " FontSize="Medium">
 
                 </Label>
                 <Button Text="choose drinks"
