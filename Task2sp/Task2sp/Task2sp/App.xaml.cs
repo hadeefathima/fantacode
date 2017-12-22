@@ -13,7 +13,7 @@ namespace Task2sp
 		{
 			InitializeComponent();
 
-			MainPage = new Task2sp.MainPage();
+			MainPage = new NavigationPage(new Task2sp.MainPage());
 		}
 
 		protected override void OnStart ()

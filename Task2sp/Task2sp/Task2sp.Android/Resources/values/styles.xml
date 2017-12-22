@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
+  <style name="Theme.splash"
+         parent="android:Theme">
+    <item name="android:windowBackground">
+      @drawable/s3
+    </item>
+    <item name="windowNoTitle">true</item>
+  </style>
   <style name="MainTheme" parent="MainTheme.Base">
+  
   </style>
   <!-- Base theme applied no matter what API -->
   <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">

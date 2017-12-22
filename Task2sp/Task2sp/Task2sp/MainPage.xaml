@@ -5,17 +5,33 @@
              x:Class="Task2sp.MainPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" Margin="50">
-                <Label Text="Name"  FontSize="Medium">
+            <StackLayout Orientation="Horizontal" Margin="50" >
+                <Label Text="Online food stall"  FontSize="Large" HorizontalTextAlignment="Center">
                 </Label>
-                <Entry Placeholder="enter your name"></Entry>
+                
             </StackLayout>
-            <StackLayout Orientation="Horizontal" Margin="50">
-                <Label Text="emailid" FontSize="Medium">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="choose your food items:" FontSize="Medium">
 
                 </Label>
-                <Entry Placeholder="email"></Entry>
+               </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Drinks:   " FontSize="Medium">
+
+                </Label>
+                <Button Text="choose drinks"
+                        Clicked="Button_Clicked"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Main dish:" FontSize="Medium">
+
+                </Label>
+                <Button Text="choose items" 
+                        Clicked="Button_Clicked_1"/>
+            </StackLayout>
+            <Button Text="Save" Margin="30" HorizontalOptions="Center"
+                           Clicked="Button_Clicked_2" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
