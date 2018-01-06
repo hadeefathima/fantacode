@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TodoApp"
+             x:Class="TodoApp.MainPage">
+    <StackLayout>
+       
+            <Label Text="Task Name:"/>
+            <Entry Text="{Binding task}"></Entry>
+        
+      
+            <Label Text="Task description:"/>
+            <Entry Text="{Binding description}"></Entry>
+        
+        
+            <Label Text="done:"/>
+
+        <Switch IsToggled="{Binding Done,Mode=TwoWay}" HorizontalOptions="Center"></Switch>
+        
+            <StackLayout Orientation="Horizontal">
+            <Button Text="Add" Command="{ Binding add}"/>
+        <Button Text="View" Command="{ Binding views}"/>
+        <Button Text="delete" Command="{ Binding delete}"/>
+        <Button Text="update" Command="{ Binding up}"/>
+            </StackLayout>
+        <Button Text="done" Command="{ Binding doneb}"/>
+        <Entry Text="{Binding id}"></Entry>
+        <ListView HasUnevenRows="True" ItemsSource="{Binding List}" SelectedItem="{Binding objItemSelected, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <ViewCell >
+
+                        <StackLayout Orientation="Vertical" Padding="30"  >
+
+                            <Grid  >
+
+                               
+                                    <StackLayout Orientation="Horizontal" >
+
+
+
+                                    <Label Text="{Binding todoId, Mode=TwoWay}" />
+
+                                   
+                                   
+
+                                        <Label Text="{Binding task, Mode=TwoWay}" />
+
+
+
+
+
+                                    <Label Text="{Binding description, Mode=TwoWay}"/>
+                                    <Label Text="{Binding  date, Mode=TwoWay}"/>
+
+
+                                    <Label Text="{Binding  Done, Mode=TwoWay}"/>
+
+
+
+                                   
+
+                                </StackLayout>
+
+                            </Grid>
+
+                        </StackLayout>
+
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+	
+</ContentPage>
