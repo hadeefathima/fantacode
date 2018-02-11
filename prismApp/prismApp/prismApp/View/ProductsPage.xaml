@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:viewModels="clr-namespace:prismApp.ViewModel"
+             x:Class="prismApp.View.ProductsPage"
+         BindingContext="{Binding ProductsViewModel, Source={StaticResource Locator}}">
+
+
+
+    <!--<ContentPage.BindingContext>
+
+        <viewModels:ProductsViewModel />
+
+    </ContentPage.BindingContext>-->
+
+
+
+    <ContentPage.Content>
+
+        <ListView ItemsSource="{Binding Products}" />
+
+    </ContentPage.Content> ">
+    
+</ContentPage>
